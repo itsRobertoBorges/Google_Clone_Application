@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        <img
+          className="logo"
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          alt="Google"
+          href
+        />
       </header>
+      <main className="content">
+        <form className="search-form">
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Google Search"
+          />
+          <button className="search-button" type="submit">
+            Search
+          </button>
+          <button href="https://www.google.com/doodles" className="feeling-lucky-button" type="button">
+            I'm Feeling Lucky
+          </button>
+        </form>
+      </main>
+      <footer className="footer">
+        <p className="footer-text text-white">
+          Google offered in: <a href="/">English</a>
+        </p>
+      </footer>
     </div>
   );
 }
